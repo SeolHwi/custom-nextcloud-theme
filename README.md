@@ -17,3 +17,8 @@
 * config/config.php
 
   * 'theme' => 'one-tact', 추가
+
+
+
+##### 참고
+https://github.com/juliushaertl/theming_customcss
