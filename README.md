@@ -1,17 +1,19 @@
-# Custom CSS: customize your CSS to better fit your Theming needs
+# custom-nextcloud-theme
 
-Allow admins to add custom CSS to their Nextcloud instance from inside the Theming settings.
+### 테마 적용 전 설정
 
-![](https://github.com/juliushaertl/theming_customcss/raw/master/screenshot.png)
+* themes 폴더에서 git clone
 
-## Use theming color values
+* layout.guest_new.php 파일을 core/templates/ 경로로 옮기기
 
-Admin can use CSS custom properties to make use of the variables that are available from the [css-variables.scss](https://github.com/nextcloud/server/blob/master/core/css/css-variables.scss) file:
+* lib/private/TemplateLayout.php line 166, 172
 
-Example:
+  * 'guest' 를 'guest_new'로 수정
 
-```
-#element {
-  color: var(--color-primary);
-}
-```
+* core/css/variables.scss line 46 (적용 안됨.)
+
+  * $color-primary: #0A5ABC !default; 로 변경
+  
+* config/config.php
+
+  * 'theme' => 'one-tact', 추가
