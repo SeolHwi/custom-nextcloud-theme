@@ -4,8 +4,6 @@
 
 * themes 폴더에서 git clone
 
-* layout.guest_new.php 파일을 core/templates/ 경로로 옮기기
-
 * lib/private/TemplateLayout.php line 166, 172
 
   * 'guest' 를 'guest_new'로 수정
