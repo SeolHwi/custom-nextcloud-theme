@@ -92,12 +92,6 @@
         width: 100%;
     }
 }
-/* 세로 너비 <= 800px 일 때 */
-/* @media (max-height:800px) {
-    .container .right footer {
-        position: relative;
-    }
-} */
 
 #body-login {
     background-image: url("../core/img/lock.png") !important;
